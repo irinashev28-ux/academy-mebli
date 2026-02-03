@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: irinashev28-ux/akademiya-mebli
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "pages"
+    label: "Страницы"
+    files:
+      - label: "Главная страница"
+        name: "home"
+        file: "content/home.md"
+        fields:
+          - { label: "Заголовок", name: "title", widget: "string" }
+          - { label: "Текст", name: "body", widget: "markdown" }
+          - { label: "Фото", name: "image", widget: "image" }
