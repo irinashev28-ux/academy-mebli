@@ -1,10 +1,6 @@
 backend:
-  name: github
-  repo: irinashev28-ux/akademiya-mebli
+  name: git-gateway
   branch: main
-  base_url: https://api.netlify.com
-  auth_endpoint: auth
-
 
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
@@ -20,4 +16,3 @@ collections:
           - { label: "Заголовок", name: "title", widget: "string" }
           - { label: "Текст", name: "body", widget: "markdown" }
           - { label: "Фото", name: "image", widget: "image" }
-site_url: https://irinashev28-ux.github.io/akademiya-mebli
