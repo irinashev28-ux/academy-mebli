@@ -13,6 +13,17 @@
             --white: #FFFFFF;
             --text-color: #444444;
         }
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 
         body {
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -405,4 +416,5 @@
     </footer>
 
 </body>
+
 </html>
